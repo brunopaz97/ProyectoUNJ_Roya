@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ingreso de Datos del Gestor de Campo</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css\nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css\demo\nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--=================================================-->
+
+
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="plugins\pace\pace.min.css" rel="stylesheet">
+    <script src="plugins\pace\pace.min.js"></script>
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css\demo\nifty-demo.min.css" rel="stylesheet">
+
+
+        
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img\logo.JPG" alt="Nifty Logo"  width="220">
+                        
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content">
+                    <ul class="nav navbar-top-links">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-list-view"></i>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+
+
+                    </ul>
+                    <ul class="nav navbar-top-links">
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="ic-user pull-right">
+                                    <i class="demo-pli-male"></i>
+                                </span>
+                            </a>
+
+
+                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right panel-default">
+                                <ul class="head-list">
+                                    <li>
+                                        <a href="#"><i class="demo-pli-male icon-lg icon-fw"></i> Perfil</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><i class="demo-pli-gear icon-lg icon-fw"></i> Ajustes</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-login.html"><i class="demo-pli-unlock icon-lg icon-fw"></i> Cerrar Sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+                <div id="page-head">
+                    
+                    <div id="page-title">
+                        <h3 class="page-header text-main"><p style="text-align: center">INGRESO DE DATOS DEL GESTOR DE CAMPO</h3>
+                    </div>
+                    
+
+                </div>
+
+                        
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                    
+                            <div class="panel">
+
+                                <!---Desde Aqui---->
+                    
+                            <div class="col-lg-12">
+                            <div class="panel">
+                    
+                                <!-- Classic Form Wizard -->
+                                <!--===================================================-->
+                                <div id="demo-cls-wz">
+                    
+                                    <!--Nav-->
+                                    <ul class="wz-nav-off wz-icon-inline">
+                                        <li class="col-xs-3 bg-mint">
+                                            <a data-toggle="tab" href="#demo-cls-tab1">
+
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-information icon-lg"></i></span> Datos Iniciales del Lugar
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3 bg-mint">
+                                            <a data-toggle="tab" href="#demo-cls-tab2">
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-male icon-lg"></i></span> Prop. y Gestión de Cultivos
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3 bg-mint">
+                                            <a data-toggle="tab" href="#demo-cls-tab3">
+
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-home icon-lg"></i></span> Prop. de la Fertilidad del Suelo
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3 bg-mint">
+                                            <a data-toggle="tab" href="#demo-cls-tab4">
+
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-medal-2 icon-lg"></i></span> Resumen de Datos Ingresados
+                                            </a>
+                                        </li>
+                                    </ul>
+                    
+                                    <!--Progress bar-->
+                                    <div class="progress progress-xs progress-striped active">
+                                        <div class="progress-bar progress-bar-dark"></div>
+                                    </div>
+                    
+                    
+                                    <!--Form-->
+                                    <form class="form-horizontal mar-top">
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                    
+                                                <!--Primera pestaña-->
+                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-12">
+                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-9">
+                                                    <br><br>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Cód. de ubicación de predio</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Cod. de lugar" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Nombres del Productor</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="Nombres" placeholder="Nombres" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Apellidos del Productor</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Tipo de Documento</label>
+                                                        <div class="col-lg-7">
+                                                        <div class="radio col-lg-5">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio-doc" checked="">
+                                                            <label for="demo-inline-form-radio">D.N.I.</label>
+                                
+                                                            <input id="demo-inline-form-radio-1" class="magic-radio" type="radio" name="inline-form-radio-doc">
+                                                            <label for="demo-inline-form-radio-1">C.E.</label>
+                                
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Documento" data-bv-field="username">
+                                                        </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Nombre del Predio</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Nombre Predio" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Área evaluada del café</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Área" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">metros cuadrados</label>
+                                                    </div>
+
+
+                                                </div>
+                                                <p class="text-main text-bold">Elegir fecha</p>
+                    
+                                                <!--Bootstrap Datepicker : Inline-->
+                                                <!--===================================================-->
+                                                <div id="demo-dp-inline" class="col-lg-3">
+                                                    <div class="datepicker datepicker-inline"><div class="datepicker-days" style=""><table class="table-condensed"><thead><tr><th colspan="7" class="datepicker-title" style="display: none;"></th></tr><tr><th class="prev">«</th><th colspan="5" class="datepicker-switch">May 2022</th><th class="next">»</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="old day" data-date="1650758400000">24</td><td class="old day" data-date="1650844800000">25</td><td class="old day" data-date="1650931200000">26</td><td class="old day" data-date="1651017600000">27</td><td class="old day" data-date="1651104000000">28</td><td class="old day" data-date="1651190400000">29</td><td class="old day" data-date="1651276800000">30</td></tr><tr><td class="day" data-date="1651363200000">1</td><td class="day" data-date="1651449600000">2</td><td class="day" data-date="1651536000000">3</td><td class="day" data-date="1651622400000">4</td><td class="day" data-date="1651708800000">5</td><td class="day" data-date="1651795200000">6</td><td class="day" data-date="1651881600000">7</td></tr><tr><td class="day" data-date="1651968000000">8</td><td class="day" data-date="1652054400000">9</td><td class="day" data-date="1652140800000">10</td><td class="day" data-date="1652227200000">11</td><td class="day" data-date="1652313600000">12</td><td class="day" data-date="1652400000000">13</td><td class="day" data-date="1652486400000">14</td></tr><tr><td class="day" data-date="1652572800000">15</td><td class="day" data-date="1652659200000">16</td><td class="day" data-date="1652745600000">17</td><td class="day" data-date="1652832000000">18</td><td class="day" data-date="1652918400000">19</td><td class="day" data-date="1653004800000">20</td><td class="day" data-date="1653091200000">21</td></tr><tr><td class="day" data-date="1653177600000">22</td><td class="day" data-date="1653264000000">23</td><td class="today day" data-date="1653350400000">24</td><td class="day" data-date="1653436800000">25</td><td class="day" data-date="1653523200000">26</td><td class="day" data-date="1653609600000">27</td><td class="day" data-date="1653696000000">28</td></tr><tr><td class="day" data-date="1653782400000">29</td><td class="day" data-date="1653868800000">30</td><td class="day" data-date="1653955200000">31</td><td class="new day" data-date="1654041600000">1</td><td class="new day" data-date="1654128000000">2</td><td class="new day" data-date="1654214400000">3</td><td class="new day" data-date="1654300800000">4</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: table-cell;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th colspan="7" class="datepicker-title" style="display: none;"></th></tr><tr><th class="prev">«</th><th colspan="5" class="datepicker-switch">2022</th><th class="next">»</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month focused">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: table-cell;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th colspan="7" class="datepicker-title" style="display: none;"></th></tr><tr><th class="prev">«</th><th colspan="5" class="datepicker-switch">2020-2029</th><th class="next">»</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2019</span><span class="year">2020</span><span class="year">2021</span><span class="year focused">2022</span><span class="year">2023</span><span class="year">2024</span><span class="year">2025</span><span class="year">2026</span><span class="year">2027</span><span class="year">2028</span><span class="year">2029</span><span class="year new">2030</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: table-cell;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-decades" style="display: none;"><table class="table-condensed"><thead><tr><th colspan="7" class="datepicker-title" style="display: none;"></th></tr><tr><th class="prev">«</th><th colspan="5" class="datepicker-switch">2000-2090</th><th class="next">»</th></tr></thead><tbody><tr><td colspan="7"><span class="decade old">1990</span><span class="decade">2000</span><span class="decade">2010</span><span class="decade focused">2020</span><span class="decade">2030</span><span class="decade">2040</span><span class="decade">2050</span><span class="decade">2060</span><span class="decade">2070</span><span class="decade">2080</span><span class="decade">2090</span><span class="decade new">2100</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: table-cell;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-centuries" style="display: none;"><table class="table-condensed"><thead><tr><th colspan="7" class="datepicker-title" style="display: none;"></th></tr><tr><th class="prev">«</th><th colspan="5" class="datepicker-switch">2000-2900</th><th class="next">»</th></tr></thead><tbody><tr><td colspan="7"><span class="century old">1900</span><span class="century focused">2000</span><span class="century">2100</span><span class="century">2200</span><span class="century">2300</span><span class="century">2400</span><span class="century">2500</span><span class="century">2600</span><span class="century">2700</span><span class="century">2800</span><span class="century">2900</span><span class="century new">3000</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: table-cell;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div></div>
+                                                </div>
+
+                                                </div>
+                    
+                                                <!--Second tab-->
+                                                <div id="demo-cls-tab2" class="tab-pane fade">
+                                                    
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Densidad de plantas por hectárea</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Densidad" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">árboles/metro cuadrado</label>
+                                                    </div>
+
+                                                <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Distanciamiento entre surcos</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Separación" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">metros</label>
+                                                        
+                                                </div>
+
+                                                <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Distancia entre plantas</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Distancia" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">metros</label>
+                                                </div>
+                                                    <div class="form-group has-feedback">
+                                                    <label class="col-lg-3 control-label">Variedad de Café</label>
+                                                        <div class="radio col-lg-7">
+                    
+                                                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio" name="inline-form-radio2" checked="">
+                                                            <label for="demo-inline-form-radio-2">Bourbón</label>
+                                
+                                                            <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <label for="demo-inline-form-radio-3">Catuai</label>
+
+                                                            <input id="demo-inline-form-radio-4" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <label for="demo-inline-form-radio-4">Caturra</label>
+
+                                                            <input id="demo-inline-form-radio-5" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <label for="demo-inline-form-radio-5">Pache</label>
+
+                                                            <input id="demo-inline-form-radio-6" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <label for="demo-inline-form-radio-6">Catimor</label>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Edad del cultivo</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Edad" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">años</label>
+
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Especie asociada al cultivo</label>
+                                                        <div class="col-lg-5">
+                                                        <div class="radio col-lg-5">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio-7" class="magic-radio" type="radio" name="inline-form-radio-esp" checked="">
+                                                            <label for="demo-inline-form-radio-7">Frutal</label>
+                                
+                                                            <input id="demo-inline-form-radio-8" class="magic-radio" type="radio" name="inline-form-radio-esp">
+                                                            <label for="demo-inline-form-radio-8">Forestal</label>
+                                
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Especie" data-bv-field="username">
+                                                        </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Porcentaje de Sombra</label>
+                                                        <div class="col-lg-1">
+                                                            <input type="text" placeholder="" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-3">%</label>
+                                                </div>
+
+                                                <div class="form-group has-feedback">
+                                                    <label class="col-lg-3 control-label">Tipo de Sombra</label>
+                                                        <div class="radio col-lg-7">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio-9" class="magic-radio" type="radio" name="inline-form-radio3" checked="">
+                                                            <label for="demo-inline-form-radio-9">Temporal</label>
+                                
+                                                            <input id="demo-inline-form-radio-10" class="magic-radio" type="radio" name="inline-form-radio3">
+                                                            <label for="demo-inline-form-radio-10">Intermedia</label>
+
+                                                            <input id="demo-inline-form-radio-11" class="magic-radio" type="radio" name="inline-form-radio3">
+                                                            <label for="demo-inline-form-radio-11">Permanente</label>                                
+                                                        </div>
+                                                    </div>
+
+                                                <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Control de la Roya del café en el último mes</label>
+                                                        <div class="radio col-lg-2">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio-12" class="magic-radio" type="radio" name="inline-form-radio-c1m" checked="">
+                                                            <label for="demo-inline-form-radio-12">Si</label>
+                                
+                                                            <input id="demo-inline-form-radio-13" class="magic-radio" type="radio" name="inline-form-radio-c1m">
+                                                            <label for="demo-inline-form-radio-13">No</label>
+                                
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Tipo de Control" data-bv-field="username">
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Producto Utilizado" data-bv-field="username">
+                                                        </div>
+                                                </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Control de la Roya del café en los últimos 3 meses</label>
+                                                        <div class="radio col-lg-2">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio-14" class="magic-radio" type="radio" name="inline-form-radio-c3m" checked="">
+                                                            <label for="demo-inline-form-radio-14">Si</label>
+                                
+                                                            <input id="demo-inline-form-radio-15" class="magic-radio" type="radio" name="inline-form-radio-c3m">
+                                                            <label for="demo-inline-form-radio-15">No</label>
+                                
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Tipo de Control" data-bv-field="username">
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Producto Utilizado" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Fertilización en los últimos 4 meses</label>
+                                                        <div class="radio col-lg-2">
+                    
+                                                            <!-- Inline radio buttons -->
+                                                            <input id="demo-inline-form-radio-16" class="magic-radio" type="radio" name="inline-form-radio-fer" checked="">
+                                                            <label for="demo-inline-form-radio-16">Si</label>
+                                
+                                                            <input id="demo-inline-form-radio-17" class="magic-radio" type="radio" name="inline-form-radio-fer">
+                                                            <label for="demo-inline-form-radio-17">No</label>
+                                
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Tipo de Fertilizante" data-bv-field="username">
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <input type="text" class="form-control" name="Documento" placeholder="Producto Utilizado" data-bv-field="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Producción acumulada de café en los últimos 2 meses</label>
+                                                        <div class="col-lg-1">
+                                                            <input type="text" placeholder="" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-2">kg</label>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Carga Fructífera</label>
+                                                        <div class="col-lg-1">
+                                                            <input type="text" placeholder="" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-2">NP</label>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-3 control-label">Acidez del agua de lluvia</label>
+                                                        <div class="col-lg-1">
+                                                            <input type="text" placeholder="" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <label class="col-lg-2">pH</label>
+                                                </div>
+
+
+
+
+                                                </div>
+                    
+                                                <!--Third tab-->
+                                                <div id="demo-cls-tab3" class="tab-pane">
+
+                                                    <div id="demo-bv-tab4" class="tab-pane active in col-lg-4">
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Grado de Acidez pH</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Nitrógeno</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="address" class="form-control" data-bv-field="address"><i class="form-control-feedback" data-bv-icon-for="address" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">The address is required</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Arena</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div id="demo-bv-tab4" class="tab-pane active in col-lg-4">
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Fósforo</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Potasio</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="address" class="form-control" data-bv-field="address"><i class="form-control-feedback" data-bv-icon-for="address" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">The address is required</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Limo</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div id="demo-bv-tab4" class="tab-pane active in col-lg-4">
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Materia Orgánica</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Calcio</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="address" class="form-control" data-bv-field="address"><i class="form-control-feedback" data-bv-icon-for="address" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">The address is required</small></div>
+                                                    </div>
+                                                    <div class="form-group has-feedback">
+                                                        <label class="col-lg-5 control-label">Arcilla</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" placeholder="" name="phoneNumber" class="form-control" data-bv-field="phoneNumber"><i class="form-control-feedback" data-bv-icon-for="phoneNumber" style="display: none;"></i>
+                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The phone number is required and cannot be empty</small><small class="help-block" data-bv-validator="digits" data-bv-for="phoneNumber" data-bv-result="NOT_VALIDATED" style="display: none;">The value can contain only digits</small></div>
+                                                    </div>
+                                                    </div>
+
+                                                </div>
+                    
+                                                <!--Fourth tab-->
+                                                <div id="demo-cls-tab4" class="tab-pane mar-btm">
+
+                                                    <h3>Valores ingresados</h3>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-12 table-responsive">
+                                                            <table class="table table-bordered invoice-summary">
+                                                                <thead>
+                                                                    <tr class="bg-trans-dark">
+                                                                        <th class="text-uppercase" style="text-align: center">Descripcion</th>
+                                                                        <th class="min-col text-center text-uppercase">Ingresado</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Nombres del Productor</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Bruno</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Apellidos del Productor</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Paz</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Documento de Identidad del Productor</strong>
+                                                                        </td>
+                                                                        <td class="text-center">78495365</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Nombre del predio</strong>
+                                                                        </td>
+                                                                        <td class="text-center">San Borja</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Codigo de lugar de producción(predio)</strong>
+                                                                        </td>
+                                                                        <td class="text-center">2705</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Área evaluada del café</strong>
+                                                                        </td>
+                                                                        <td class="text-center">1 hectárea</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Densidad de plantas por hectárea</strong>
+                                                                        </td>
+                                                                        <td class="text-center">1500 árboles/hectárea</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Separación de los surcos</strong>
+                                                                        </td>
+                                                                        <td class="text-center">20 centímetros</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Distancia entre plantas</strong>
+                                                                        </td>
+                                                                        <td class="text-center">2 metros</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Variedad de Café</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Bourbón / Caturra / Pache</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Edad del cultivo</strong>
+                                                                        </td>
+                                                                        <td class="text-center">5 años</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Porcentaje de Sombra</strong>
+                                                                        </td>
+                                                                        <td class="text-center">60%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Tipo de Sombra</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Intermedia</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Control de la Roya del café en el último mes</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Realizado</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Control de la Roya del café en los últimos 3 meses</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Realizado</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Fertilización en los últimos 4 meses</strong>
+                                                                        </td>
+                                                                        <td class="text-center">Realizado</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Producción acumulada de café en los últimos 2 meses</strong>
+                                                                        </td>
+                                                                        <td class="text-center">700 kg</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Carga Fructífera</strong>
+                                                                        </td>
+                                                                        <td class="text-center">250 NP</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Acidez del agua de Lluvia</strong>
+                                                                        </td>
+                                                                        <td class="text-center">5.1 pH</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Grado de Acidez</strong>
+                                                                        </td>
+                                                                        <td class="text-center">20</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Nitrógeno</strong>
+                                                                        </td>
+                                                                        <td class="text-center">10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Arena</strong>
+                                                                        </td>
+                                                                        <td class="text-center">15</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Fósforo</strong>
+                                                                        </td>
+                                                                        <td class="text-center">16</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Potasio</strong>
+                                                                        </td>
+                                                                        <td class="text-center">19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Limo</strong>
+                                                                        </td>
+                                                                        <td class="text-center">22</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Materia Orgánica</strong>
+                                                                        </td>
+                                                                        <td class="text-center">23</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Calcio</strong>
+                                                                        </td>
+                                                                        <td class="text-center">25</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Arcilla</strong>
+                                                                        </td>
+                                                                        <td class="text-center">24</td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                    
+                                        <!--Footer button-->
+                                        <div class="panel-footer text-center">
+                                            <div class="box-inline">
+                                                <button type="button" class="previous btn btn-info">Anterior</button>
+                                                <button type="button" class="next btn btn-mint">Siguiente</button>
+                                                <button type="button" class="finish btn btn-success" disabled="">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--===================================================-->
+                                <!-- End Classic Form Wizard -->
+                    
+                            </div>
+                        </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+
+            
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+
+                    <!--OPTIONAL : ADD YOUR LOGO TO THE NAVIGATION-->
+                    <!--It will only appear on small screen devices.-->
+                    <!--================================
+                    <div class="mainnav-brand">
+                        <a href="index.html" class="brand">
+                            <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+                            <span class="brand-text">Nifty</span>
+                        </a>
+                        <a href="#" class="mainnav-toggle"><i class="pci-cross pci-circle icon-lg"></i></a>
+                    </div>
+                    -->
+
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <!--Profile Widget-->
+                                <!--================================-->
+                                <div id="mainnav-profile" class="mainnav-profile">
+                                    <div class="profile-wrap text-center">
+                                        <div class="pad-btm">
+                                            <img class="img-circle img-md" src="img\profile-photos\1.png" alt="Profile Picture">
+                                        </div>
+                                        <a href="#" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            <span class="pull-right dropdown-toggle">
+                                                <i class="dropdown-caret"></i>
+                                            </span>
+                                            <p class="mnp-name">Bruno Paz</p>
+                                            <span class="mnp-desc">bpaz@inictel-uni.edu.pe</span>
+                                        </a>
+                                    </div>
+                                    <div id="profile-nav" class="collapse list-group bg-trans">
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-male icon-lg icon-fw"></i> Perfil
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-gear icon-lg icon-fw"></i> Ajustes
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-information icon-lg icon-fw"></i> Ayuda
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="demo-pli-unlock icon-lg icon-fw"></i> Cerrar Sesión
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <!--Shortcut buttons-->
+                                <!--================================-->
+                                <div id="mainnav-shortcut" class="hidden">
+                                    <ul class="list-unstyled shortcut-wrap">
+                                        <li class="col-xs-3" data-content="My Profile">
+                                            <a class="shortcut-grid" href="#">
+                                                <div class="icon-wrap icon-wrap-sm icon-circle bg-mint">
+                                                <i class="demo-pli-male"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Messages">
+                                            <a class="shortcut-grid" href="#">
+                                                <div class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+                                                <i class="demo-pli-speech-bubble-3"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Activity">
+                                            <a class="shortcut-grid" href="#">
+                                                <div class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                                                <i class="demo-pli-thunder"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3" data-content="Lock Screen">
+                                            <a class="shortcut-grid" href="#">
+                                                <div class="icon-wrap icon-wrap-sm icon-circle bg-purple">
+                                                <i class="demo-pli-lock-2"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--================================-->
+                                <!--End shortcut buttons-->
+
+
+                                <ul id="mainnav-menu" class="list-group">
+                        
+                                    <!--Category name-->
+                                    <li class="list-header"><p style="text-align: justify"»>Sistema de Monitoreo y Diagnóstico de Alerta Temprana para Detectar la Aparición de la Roya en Plantaciones de café en el Distrito de Chirinos, Cajamarca</p></li>
+                        
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-receipt-4"></i>
+                                            <span class="menu-title">Monitoreo</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Monitoreo de Parametros</a></li>
+                                            <li><a href="#">Información de Etapas</a></li>
+                                            <li><a href="#">Eventos</a></li>
+                                            
+                                        </ul>
+                                    </li>
+
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-pen-5"></i>
+                                            <span class="menu-title">Control</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Ingreso de Datos del Gestor de Campo</a></li>
+                                            <li><a href="#">Reporte de Analista</a></li>
+                                            <li><a href="#">Controles del Área</a></li>
+                                            <li><a href="#">Márgenes</a></li>
+                                            <li><a href="#">Parámetros</a></li>                                            
+                                        </ul>
+                                    </li>
+
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-bar-chart"></i>
+                                            <span class="menu-title">Reportes</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="gauges_sensores.html">Última Lectura de Sensores</a></li>
+                                            <li><a href="esp-data.php">Listado de Datos</a></li>  
+                                            <li><a href="#">Estadísticas</a></li>                                            
+                                        </ul>
+                                    </li>
+                        
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">Mantenimiento</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Sensores</a></li>
+                                            <li><a href="#">Variedad de Café</a></li>
+                                            <li><a href="#">Plantación</a></li>
+                                            <li><a href="#">Tipo de Eventos</a></li>
+                                            <li><a href="#">Tipo de Parámetros</a></li>                                            
+                                        </ul>
+                                    </li>
+                        
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-unlock"></i>
+                                            <span class="menu-title">Seguridad</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Perfiles</a></li>
+                                            <li><a href="#">Usuarios</a></li>
+                                            <li><a href="#">Permisos</a></li>
+                                            <li><a href="#">Módulos</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                        
+                                    <li class="list-divider"></li>
+ 
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--================================-->
+                    <!--End menu-->
+
+                    
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+        
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <p class="pad-lft">&#0169; INICTEL-UNI & UNJ 2022</p>
+
+
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+
+
+    
+    
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js\jquery.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js\bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js\nifty.min.js"></script>
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js\demo\nifty-demo.min.js"></script>
+
+    
+    <!--Bootstrap Wizard [ OPTIONAL ]-->
+    <script src="plugins\bootstrap-wizard\jquery.bootstrap.wizard.min.js"></script>
+
+
+    <!--Bootstrap Validator [ OPTIONAL ]-->
+    <script src="plugins\bootstrap-validator\bootstrapValidator.min.js"></script>
+
+
+    <!--Form Wizard [ SAMPLE ]-->
+    <script src="js\demo\form-wizard.js"></script>
+</body>
+</html>
+
