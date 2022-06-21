@@ -157,18 +157,18 @@
                                         <li class="col-xs-3 bg-success">
                                             <a data-toggle="tab" href="#demo-cls-tab1">
 
-                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-information icon-lg"></i></span> Datos Iniciales del Lugar
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-information icon-lg"></i></span> Datos Iniciales del Lugar y del Productor
                                             </a>
                                         </li>
                                         <li class="col-xs-3 bg-success">
                                             <a data-toggle="tab" href="#demo-cls-tab2">
-                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-male icon-lg"></i></span> Prop. y Gestión de Cultivos
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-male icon-lg"></i></span> Propiedades y Gestión de Cultivos
                                             </a>
                                         </li>
                                         <li class="col-xs-3 bg-success">
                                             <a data-toggle="tab" href="#demo-cls-tab3">
 
-                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-home icon-lg"></i></span> Prop. de la Fertilidad del Suelo
+                                                <span class="icon-wrap icon-wrap-xs"><i class="demo-pli-home icon-lg"></i></span> Propiedades de la Fertilidad del Suelo
                                             </a>
                                         </li>
                                         <li class="col-xs-3 bg-success">
@@ -197,7 +197,7 @@
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Cód. de Parcela</label>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="id_parcela" placeholder="Ingrese código de Parcela" data-bv-field="id_parcela">
+                                                            <input type="text" class="form-control" name="id_predio" placeholder="Ingrese código de Parcela" data-bv-field="id_predio">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -209,20 +209,20 @@
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Área evaluada del café</label>
                                                         <div class="col-lg-4">
-                                                            <input type="text" name="area_predio" class="form-control" data-bv-field="area_predio">
+                                                            <input type="number" class="form-control" name="area_eval_predio" data-bv-field="area_eval_predio">
                                                         </div>
-                                                        <label class="col-lg-3">metros cuadrados</label>
+                                                        <label class="col-lg-3">m<sup>2</sup> &nbsp; &nbsp;(metros cuadrados)</label>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Nombres del Productor</label>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Nombres" data-bv-field="username">
+                                                            <input type="text" class="form-control" name="nom_productor" data-bv-field="nom_productor">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Apellidos del Productor</label>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos" data-bv-field="username">
+                                                            <input type="text" class="form-control" name="apel_productor" data-bv-field="apel_productor">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -230,16 +230,15 @@
                                                         <div class="col-lg-7">
                                                         <div class="radio col-lg-5">
                     
-                                                            <!-- Inline radio buttons -->
-                                                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio-doc" checked="">
+                                                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="tipo_doc_productor" checked="">
                                                             <label for="demo-inline-form-radio">D.N.I.</label>
                                 
-                                                            <input id="demo-inline-form-radio-1" class="magic-radio" type="radio" name="inline-form-radio-doc">
+                                                            <input id="demo-inline-form-radio-1" class="magic-radio" type="radio" name="tipo_doc_productor">
                                                             <label for="demo-inline-form-radio-1">C.E.</label>
                                 
                                                         </div>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Documento" placeholder="Documento" data-bv-field="username">
+                                                            <input type="number" class="form-control" name="nro_doc_productor" data-bv-field="nro_doc_productor">
                                                         </div>
                                                         </div>
 
@@ -253,9 +252,8 @@
                                                         <div class="row justify-content-center">
                                                             <div class="col-lg-6 col-sm-6">
                                                                 <label for="startDate"></label>
-                                                                <input id="startDate" class="form-control" type="date" />
+                                                                <input id="startDate" class="form-control" name="fecha_eval" type="date" />
                                                             </div>
-
                                                         </div>
                                                     </form>
                                                 </div>
@@ -265,47 +263,46 @@
                                                 <!--Second tab-->
                                                 <div id="demo-cls-tab2" class="tab-pane fade">
                                                     
-                                                    <div class="form-group has-feedback">
-                                                        <label class="col-lg-3 control-label">Densidad de plantas por hectárea</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" placeholder="Densidad" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
-                                                        <label class="col-lg-3">árboles/metro cuadrado</label>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Densidad de plantas por hectárea</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="number" placeholder="Ingrese densidad de plantas por hectárea" class="form-control" name="plantasxhectarea" data-bv-field="plantasxhectarea">
                                                     </div>
-
-                                                <div class="form-group has-feedback">
-                                                        <label class="col-lg-3 control-label">Distanciamiento entre surcos</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" placeholder="Separación" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
-                                                        <label class="col-lg-3">metros</label>
-                                                        
+                                                    <label class="col-lg-3">árboles/m<sup>2</sup> &nbsp; &nbsp; (metros cuadrados)</label>
                                                 </div>
 
-                                                <div class="form-group has-feedback">
+                                                <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Distancia entre surcos</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder="Ingresar separación entre surcos" class="form-control" name="distancia_surcos" data-bv-field="distancia_surcos">
+                                                        </div>
+                                                        <label class="col-lg-3">m &nbsp; &nbsp; (metros)</label>            
+                                                </div>
+
+                                                <div class="form-group">
                                                         <label class="col-lg-3 control-label">Distancia entre plantas</label>
                                                         <div class="col-lg-4">
-                                                            <input type="text" placeholder="Distancia" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
-                                                        <label class="col-lg-3">metros</label>
+                                                            <input type="text" placeholder="Ingresar distancia entre plantas" class="form-control" name="distancia_plantas" data-bv-field="distancia_plantas">
+                                                        </div>
+                                                        <label class="col-lg-3">m &nbsp; &nbsp; (metros)</label>
                                                 </div>
-                                                    <div class="form-group has-feedback">
+                                                    <div class="form-group">
                                                     <label class="col-lg-3 control-label">Variedad de Café</label>
                                                         <div class="radio col-lg-7">
                     
-                                                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio" name="inline-form-radio2" checked="">
+                                                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio" name="variedad_cafe" checked="">
                                                             <label for="demo-inline-form-radio-2">Bourbón</label>
                                 
-                                                            <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="variedad_cafe">
                                                             <label for="demo-inline-form-radio-3">Catuai</label>
 
-                                                            <input id="demo-inline-form-radio-4" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <input id="demo-inline-form-radio-4" class="magic-radio" type="radio" name="variedad_cafe">
                                                             <label for="demo-inline-form-radio-4">Caturra</label>
 
-                                                            <input id="demo-inline-form-radio-5" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <input id="demo-inline-form-radio-5" class="magic-radio" type="radio" name="variedad_cafe">
                                                             <label for="demo-inline-form-radio-5">Pache</label>
 
-                                                            <input id="demo-inline-form-radio-6" class="magic-radio" type="radio" name="inline-form-radio2">
+                                                            <input id="demo-inline-form-radio-6" class="magic-radio" type="radio" name="variedad_cafe">
                                                             <label for="demo-inline-form-radio-6">Catimor</label>
 
                                                         </div>
@@ -314,8 +311,8 @@
                                                     <div class="form-group has-feedback">
                                                         <label class="col-lg-3 control-label">Edad del cultivo</label>
                                                         <div class="col-lg-4">
-                                                            <input type="text" placeholder="Edad" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
+                                                            <input type="number" placeholder="Ingrese edad del cultivo" name="edad_cultivo" class="form-control" data-bv-field="edad_cultivo"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
+                                                        </div>
                                                         <label class="col-lg-3">años</label>
 
                                                     </div>
@@ -323,52 +320,49 @@
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Especie asociada al cultivo</label>
                                                         <div class="col-lg-5">
-                                                        <div class="radio col-lg-5">
+                                                        <div class="radio col-lg-4">
                     
-                                                            <!-- Inline radio buttons -->
-                                                            <input id="demo-inline-form-radio-7" class="magic-radio" type="radio" name="inline-form-radio-esp" checked="">
+                                                            <input id="demo-inline-form-radio-7" class="magic-radio" type="radio" name="tipo_esp_asociada" checked="">
                                                             <label for="demo-inline-form-radio-7">Frutal</label>
                                 
-                                                            <input id="demo-inline-form-radio-8" class="magic-radio" type="radio" name="inline-form-radio-esp">
+                                                            <input id="demo-inline-form-radio-8" class="magic-radio" type="radio" name="tipo_esp_asociada">
                                                             <label for="demo-inline-form-radio-8">Forestal</label>
                                 
                                                         </div>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" name="Documento" placeholder="Especie" data-bv-field="username">
+                                                        <div class="col-lg-5">
+                                                            <input type="text" class="form-control" name="esp_asociada" placeholder="Nombre de especie asociada" data-bv-field="esp_asociada">
                                                         </div>
                                                         </div>
 
                                                     </div>
+                                                
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Tipo de Sombra</label>
+                                                            <div class="radio col-lg-7">
+                        
+                                                                <input id="demo-inline-form-radio-9" class="magic-radio" type="radio" name="tipo_sombra" checked="">
+                                                                <label for="demo-inline-form-radio-9">Temporal</label>
+                                    
+                                                                <input id="demo-inline-form-radio-10" class="magic-radio" type="radio" name="tipo_sombra">
+                                                                <label for="demo-inline-form-radio-9">Intermedia</label>
+    
+                                                                <input id="demo-inline-form-radio-11" class="magic-radio" type="radio" name="tipo_sombra">
+                                                                <label for="demo-inline-form-radio-11">Permanente</label>                                
+                                                            </div>
+                                                    </div>
 
-                                                <div class="form-group has-feedback">
+                                                <div class="form-group">
                                                         <label class="col-lg-3 control-label">Porcentaje de Sombra</label>
-                                                        <div class="col-lg-1">
-                                                            <input type="text" placeholder="" name="lastName" class="form-control" data-bv-field="lastName"><i class="form-control-feedback" data-bv-icon-for="lastName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastName" data-bv-result="NOT_VALIDATED" style="display: none;">The last name can only consist of alphabetical characters and spaces</small></div>
+                                                        <div class="col-lg-3">
+                                                            <input type="number" placeholder="Ingrese porcentaje de sombra" name="porcen_sombra" class="form-control" data-bv-field="porcen_sombra">
+                                                        </div>
                                                         <label class="col-lg-3">%</label>
                                                 </div>
-
-                                                <div class="form-group has-feedback">
-                                                    <label class="col-lg-3 control-label">Tipo de Sombra</label>
-                                                        <div class="radio col-lg-7">
-                    
-                                                            <!-- Inline radio buttons -->
-                                                            <input id="demo-inline-form-radio-9" class="magic-radio" type="radio" name="inline-form-radio3" checked="">
-                                                            <label for="demo-inline-form-radio-9">Temporal</label>
-                                
-                                                            <input id="demo-inline-form-radio-10" class="magic-radio" type="radio" name="inline-form-radio3">
-                                                            <label for="demo-inline-form-radio-10">Intermedia</label>
-
-                                                            <input id="demo-inline-form-radio-11" class="magic-radio" type="radio" name="inline-form-radio3">
-                                                            <label for="demo-inline-form-radio-11">Permanente</label>                                
-                                                        </div>
-                                                    </div>
 
                                                 <div class="form-group has-feedback">
                                                         <label class="col-lg-3 control-label">Control de la Roya del café en el último mes</label>
                                                         <div class="radio col-lg-2">
                     
-                                                            <!-- Inline radio buttons -->
                                                             <input id="demo-inline-form-radio-12" class="magic-radio" type="radio" name="inline-form-radio-c1m" checked="">
                                                             <label for="demo-inline-form-radio-12">Si</label>
                                 
