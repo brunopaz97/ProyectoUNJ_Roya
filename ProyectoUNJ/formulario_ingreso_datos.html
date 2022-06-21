@@ -192,18 +192,31 @@
                     
                                                 <!--Primera pestaña-->
                                                 <div id="demo-cls-tab1" class="tab-pane active in col-lg-12">
-                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-9">
+                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-7">
                                                     <br><br>
                                                     <div class="form-group">
-                                                        <label class="col-lg-3 control-label">Cód. de ubicación de predio</label>
+                                                        <label class="col-lg-3 control-label">Cód. de Parcela</label>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Cod. de lugar" data-bv-field="username">
+                                                            <input type="text" class="form-control" name="id_parcela" placeholder="Ingrese código de Parcela" data-bv-field="id_parcela">
                                                         </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Nombre del Predio</label>
+                                                        <div class="col-lg-7">
+                                                            <input type="text" class="form-control" name="nom_predio" data-bv-field="nom_predio">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Área evaluada del café</label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" name="area_predio" class="form-control" data-bv-field="area_predio">
+                                                        </div>
+                                                        <label class="col-lg-3">metros cuadrados</label>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-lg-3 control-label">Nombres del Productor</label>
                                                         <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Nombres" placeholder="Nombres" data-bv-field="username">
+                                                            <input type="text" class="form-control" name="Nombres" data-bv-field="username">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -231,32 +244,16 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="col-lg-3 control-label">Nombre del Predio</label>
-                                                        <div class="col-lg-7">
-                                                            <input type="text" class="form-control" name="Apellidos" placeholder="Nombre Predio" data-bv-field="username">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group has-feedback">
-                                                        <label class="col-lg-3 control-label">Área evaluada del café</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" placeholder="Área" name="firstName" class="form-control" data-bv-field="firstName"><i class="form-control-feedback" data-bv-icon-for="firstName" style="display: none;"></i>
-                                                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name is required and cannot be empty</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstName" data-bv-result="NOT_VALIDATED" style="display: none;">The first name can only consist of alphabetical characters and spaces</small></div>
-                                                        <label class="col-lg-3">metros cuadrados</label>
-                                                    </div>
-
-
                                                 </div>
                                                 
-                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-3">
+                                                <div id="demo-cls-tab1" class="tab-pane active in col-lg-5">
+                                                    <br><br>
                                                     <form>
                                                         <label for="date" class="col-form-label">Elegir fecha</label>
                                                         <div class="row justify-content-center">
-                                                            <div class="col-lg-8 col-sm-6">
+                                                            <div class="col-lg-6 col-sm-6">
                                                                 <label for="startDate"></label>
                                                                 <input id="startDate" class="form-control" type="date" />
-                                                                <br>
-                                                                <span id="startDateSelected"></span>
                                                             </div>
 
                                                         </div>
