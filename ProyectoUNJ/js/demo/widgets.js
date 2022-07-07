@@ -118,7 +118,7 @@ $(document).on('nifty.ready', function() {
 
     var target = document.getElementById('demo-gauge'); // your canvas element
     var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-    gauge.maxValue = 300; // set max gauge value
+    gauge.maxValue = 500; // set max gauge value
     gauge.animationSpeed = 32; // set animation speed (32 is default value)
     gauge.set(179); // set actual value
     gauge.setTextField(document.getElementById("demo-gauge-text"));
